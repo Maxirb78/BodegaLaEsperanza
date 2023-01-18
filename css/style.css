@@ -140,7 +140,7 @@ img {
 
 .hero__contenedor {
     width: 100%;
-    padding: 25px 0;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,24 +378,30 @@ img {
 /** Nuestros Vinos **/
 
 .galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.galeria {
+    display: flex;
+    flex-direction: column;
 }
 
-/* .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'area1 area6 area4'
-    'area1 area6 area4'
-    'area3 area5 area7 '
-    'area3 area5 area2 ';
-    gap: 10px;
-    background-color: #fff;
-    padding: 50px;
-} */
+@media screen and (min-width:768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        'area1 area6 area4'
+        'area1 area6 area4'
+        'area3 area5 area7 '
+        'area3 area5 area2 ';
+        gap: 10px;
+        background-color: #fff;
+        padding: 50px;
+    } 
+}
 
 .galeria__fotos {
     width: 100%;
@@ -447,14 +453,20 @@ img {
 }
 .formulario {
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 20px;
     font-size: 20px;
     padding: 20px 0;
 }
 
-.formulario img {
-    width: 60%;
+@media screen and (min-width:768px) {
+    .formulario {
+        flex-direction: row;
+    }
+    .formulario img {
+        width: 60%;
+    }
 }
 
 .form {
