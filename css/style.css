@@ -377,11 +377,7 @@ img {
 
 /** Nuestros Vinos **/
 
-.galeria {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 .galeria {
     display: flex;
     flex-direction: column;
